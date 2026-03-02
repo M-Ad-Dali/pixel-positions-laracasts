@@ -2,7 +2,8 @@
     <div class="space-y-10">
         <section>
             <x-section-heading>Featured Jobs</x-section-heading>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-6">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mt-6">
+                <x-job-card />
                 <x-job-card />
                 <x-job-card />
                 <x-job-card />
@@ -31,5 +32,11 @@
         </section>
         <x-section-heading>Recent Jobs</x-section-heading>
         <section>
+            <div class="mt-6 space-y-6 mb-6">
+                <x-job-card-wide />
+                <x-job-card-wide />
+                <x-job-card-wide />
+                <x-job-card-wide />
+            </div>
     </div>
 </x-layout>

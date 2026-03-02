@@ -1,17 +1,20 @@
-<div class="p-4 bg-white/5 rounded-xl flex-col text-center">
-            <div class="py-8 font-bold">
-                <h3>Video Producer</h3>
-                <p>Full Time - From $60,000</p>
-            </div>
+<x-panel class="flex gap-x-6">
+    <div>
+        <x-employer-logo />
+    </div>
+    <div class="flex-1 flex flex-col">
+        <a href="#" class="self-start text-sm text-gray-500">Laracasts</a>
 
-            <div class="flex justify-between items-center mt-auto">
-                <div>
-                    <x-tag>Tag</x-tag>
-                    <x-tag>Tag</x-tag>
-                    <x-tag>Tag</x-tag>
-                </div>
+        <h3 class="font-bold text-xl mt-3 group-hover:text-blue-600 transition-colors duration-400">Video Producer</h3>
+        <p class="text-sm text-gray-400 mt-auto">Full Time - From $60,000</p>
+    </div>
 
-                <img src="https://placehold.co/42x42/090841/ffffff" alt="" class="rounded-xl">
-            </div>
-
+    <div>
+        <div>
+            <x-tag>Tag</x-tag>
+            <x-tag>Tag</x-tag>
+            <x-tag>Tag</x-tag>
         </div>
+
+    </div>
+</x-panel>
