@@ -6,13 +6,13 @@
     </div>
 
     <div class="flex justify-between items-center mt-auto">
-        <div>
-            <x-tag>Tag</x-tag>
-            <x-tag>Tag</x-tag>
-            <x-tag>Tag</x-tag>
+        <div class="inline-flex gap-1">
+            <x-tag size="small">Backend</x-tag>
+            <x-tag size="small">Frontend</x-tag>
+            <x-tag size="small">Manager</x-tag>
         </div>
 
-        <x-employer-logo : />
+        <x-employer-logo/>
     </div>
 
 </x-panel>
