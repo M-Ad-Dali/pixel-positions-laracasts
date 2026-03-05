@@ -33,7 +33,7 @@
 
             @auth
             <div>
-                <a href="">Post a job</a>
+                <a href="/jobs/create">Post a job</a>
             </div>
             @endauth
 
