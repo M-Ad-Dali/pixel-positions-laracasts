@@ -20,7 +20,7 @@
             @endforeach
         </div>
 
-        <x-employer-logo />
+        <x-employer-logo :employer="$job->employer" width="45" />
     </div>
 
 </x-panel>

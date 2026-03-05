@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pixel Positions</title>
-    {{-- Google Fonts --}}\
+    {{-- Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -32,14 +30,23 @@
             </div>
 
             @auth
-            <div>
-                <a href="/jobs/create">Post a job</a>
-            </div>
+                <div class="space-x-6 font-bold flex">
+                    <a href="/jobs/create">Post a job</a>
+
+                    <form action="{{ route('logout') }}" method="POST" class="inline">
+                        @csrf
+                        <button type="submit" class="text-red-600 hover:text-red-800 font-bold cursor-pointer">
+                            Log Out
+                        </button>
+                    </form>
+                </div>
             @endauth
 
             @guest
-                <a href="/register">Sign Up</a>
-                <a href="/login">Log In</a>
+                <div class="space-x-6 font-bold flex">
+                    <a href="/register">Register</a>
+                    <a href="/login">Log In</a>
+                </div>
             @endguest
         </nav>
 
